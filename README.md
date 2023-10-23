@@ -1,3 +1,5 @@
+### All credits goes to @miaz
+
 # websocket
 
 Basic, cross-platform native websocket implementation for Capacitor/Ionic.

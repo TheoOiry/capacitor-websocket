@@ -386,28 +386,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@miaz/capacitor-websocket@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@miaz/capacitor-websocket@workspace:."
-  dependencies:
-    "@capacitor/android": ^5.3.0
-    "@capacitor/cli": ^5.3.0
-    "@capacitor/core": ^5.3.0
-    "@capacitor/docgen": ^0.2.1
-    "@capacitor/ios": ^5.3.0
-    "@ionic/eslint-config": ^0.3.0
-    "@ionic/prettier-config": ^4.0.0
-    "@ionic/swiftlint-config": ^1.1.2
-    eslint: ^7.11.0
-    prettier: ~2.3.0
-    prettier-plugin-java: ~1.0.2
-    rimraf: ^5.0.1
-    rollup: ^3.29.0
-    swiftlint: ^1.0.2
-    typescript: 5.2.2
-  languageName: unknown
-  linkType: soft
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -461,6 +439,28 @@ __metadata:
   checksum: 6ad6a00fc4f2f2cfc6bff76fb1d88b8ee20bc0601e18ebb01b6d4be583733a860239a521a7fbca73b612e66705078809483549d2b18f370eb346c5155c8e4a0f
   languageName: node
   linkType: hard
+
+"@theooiry/capacitor-websocket@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@theooiry/capacitor-websocket@workspace:."
+  dependencies:
+    "@capacitor/android": ^5.3.0
+    "@capacitor/cli": ^5.3.0
+    "@capacitor/core": ^5.3.0
+    "@capacitor/docgen": ^0.2.1
+    "@capacitor/ios": ^5.3.0
+    "@ionic/eslint-config": ^0.3.0
+    "@ionic/prettier-config": ^4.0.0
+    "@ionic/swiftlint-config": ^1.1.2
+    eslint: ^7.11.0
+    prettier: ~2.3.0
+    prettier-plugin-java: ~1.0.2
+    rimraf: ^5.0.1
+    rollup: ^3.29.0
+    swiftlint: ^1.0.2
+    typescript: 5.2.2
+  languageName: unknown
+  linkType: soft
 
 "@tootallnate/once@npm:2":
   version: 2.0.0

@@ -1,4 +1,4 @@
-package xyz.miaz.capacitorwebsocket;
+package xyz.theooiry.capacitorwebsocket;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
