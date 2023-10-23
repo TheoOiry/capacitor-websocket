@@ -34,10 +34,6 @@ class SocketConnection {
     }
   }
 
-  public func removeAllListeners() {
-    socket?.onEvent = nil
-  }
-
   public func bind() {
     socket?.onEvent = { event in
       switch event {

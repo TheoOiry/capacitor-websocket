@@ -87,11 +87,4 @@ public class CapacitorWebsocketPlugin: CAPPlugin {
 
     return connections[name]
   }
-
-  @objc public func removeAllListeners(_ call: CAPPluginCall) {
-    guard let connection = getSocket(call) else { return }
-    connection.removeAllListeners()
-    call.resolve()
-  }
-
 }
