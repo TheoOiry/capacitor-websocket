@@ -1,5 +1,5 @@
 {
-  "name": "@miaz/capacitor-websocket",
+  "name": "@theooiry/capacitor-websocket",
   "version": "0.6.0",
   "description": "Basic websocket for capacitor",
   "main": "dist/plugin.cjs.js",
