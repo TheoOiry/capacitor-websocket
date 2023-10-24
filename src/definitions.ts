@@ -18,6 +18,10 @@ export type CloseFrameEvent = {
     frame: string
 }
 
+export type PongFrameEvent = {
+    data: string
+}
+
 export type ConnectedEvent = {
     headers: {
         [x: string]: string[]
@@ -79,6 +83,7 @@ export interface CapacitorWebsocketPlugin extends Plugin {
     applyListeners(options: ApplyListenersOptions): Promise<void>;
     build(options: BuildOptions): Promise<void>;
     addListener<T extends string>(eventName: `${T}:message`, listenerFunc: (event: MessageEvent) => void): Promise<PluginListenerHandle> & PluginListenerHandle;
+    addListener<T extends string>(eventName: `${T}:pong`, listenerFunc: (event: PongFrameEvent) => void): Promise<PluginListenerHandle> & PluginListenerHandle;
     addListener<T extends string>(eventName: `${T}:connected`, listenerFunc: (event: ConnectedEvent) => void): Promise<PluginListenerHandle> & PluginListenerHandle;
     addListener<T extends string>(eventName: `${T}:disconnected`, listenerFunc: (event: DisconnectedEvent) => void): Promise<PluginListenerHandle> & PluginListenerHandle;
     addListener<T extends string>(eventName: `${T}:statechange`,listenerFunc: (event: StateChangedEvent) => void): Promise<PluginListenerHandle> & PluginListenerHandle;

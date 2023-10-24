@@ -1,6 +1,6 @@
 {
   "name": "@theooiry/capacitor-websocket",
-  "version": "0.6.1",
+  "version": "0.6.4",
   "description": "Basic websocket for capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

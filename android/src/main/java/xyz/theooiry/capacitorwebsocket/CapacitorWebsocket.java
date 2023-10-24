@@ -76,6 +76,18 @@ public class CapacitorWebsocket extends Plugin {
                 }
 
                 @Override
+                public void onPongFrame(WebSocket websocket, WebSocketFrame frame) throws Exception {
+                    JSObject ret = new JSObject();
+                    ret.put("data", frame);
+                    notifyListeners(String.format("%s:pong", socket.name), ret);
+                }
+
+                @Override
+                public void onPingFrame(WebSocket websocket, WebSocketFrame frame) throws Exception {
+                    websocket.sendPong("");
+                }
+
+                @Override
                 public void onStateChanged(WebSocket websocket, WebSocketState newState) throws Exception {
                     //super.onStateChanged(websocket, newState);
                     System.out.println(newState);

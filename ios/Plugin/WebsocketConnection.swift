@@ -50,7 +50,8 @@ class SocketConnection {
         self.pluginContext.notifyListeners("\(self.name):message", data: ["data": data])
       case .ping(_):
         break
-      case .pong(_):
+      case .pong(let data):
+        self.pluginContext.notifyListeners("\(self.name):pong", data: ["data": data])
         break
       case .viabilityChanged(_):
         break

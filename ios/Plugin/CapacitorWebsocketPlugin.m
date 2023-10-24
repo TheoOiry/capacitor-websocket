@@ -6,6 +6,7 @@
 CAP_PLUGIN(CapacitorWebsocketPlugin, "CapacitorWebsocket",
            CAP_PLUGIN_METHOD(build, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(applyListeners, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(removeAllListeners, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(connect, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(disconnect, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(send, CAPPluginReturnPromise);
